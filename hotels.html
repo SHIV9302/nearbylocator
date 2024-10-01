@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibrant Indore Hotels Guide with Compact Maps</title>
+    <link rel="stylesheet" href="hotels.css">
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1><img src="Assets\indore navigation.png" alt="logo" width="200" height="60"></h1>
+            </div>
+            <nav class="navigation">
+                <a href="home.html" class="button">Home</a>
+                <a href="indore.html" class="button">Indore</a>
+                <a href="hotels.html" class="button">Hotel</a>
+                <a href="Restaurent.html" class="button">Restaurant</a>
+                <a href="hospital.html" class="button">Hospital</a>
+                <a href="college.html" class="button">Collage</a>
+                <a href="login.html" class ="button">Login</a>
+    
+    
+    
+            </nav>
+            <div class="search-container">
+                <input type="text" id="searchName" placeholder="Search by name...">
+                <button onclick="searchByName()">Search</button>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchLocation" placeholder="Search by location...">
+                <button onclick="searchByLocation()">Search</button>
+            </div>
+            <div class="auth-buttons">
+                <button class="auth-btn" onclick="login()">Login</button>
+                <button class="auth-btn" onclick="register()">Register</button>
+            </div>
+    
+    
+        </div>
+        
+    </header>
+
+</head>
+<body>
+    <div class="afterhead">
+
+        <div class="upper">
+        <h1>🏨Indore hotels Guide</h1>
+        <p class="subtitle">Discover top-notch hotels in the heart of Madhya Pradesh</p>
+    </div>
+     
+    <div id="notification"></div>
+
+    <div class="hotel">
+        <h2>Radisson Blu Hotel Indore</h2>
+        <div class="contact-info">
+            <div class="address">
+                <p><strong>Address:</strong> 12 Scheme No 94C, Ring Rd, Indore, Madhya Pradesh 452010</p>
+            </div>
+            <div class="phone">
+                <p><strong>Phone:</strong> <a href="tel:+917314780000">+91 731 478 0000</a></p>
+            </div>
+        </div>
+        <div class="rating">
+            <div class="stars">★★★★★</div>
+            <span>4.5/5 based on 3000+ reviews</span>
+        </div>
+        <p class="review">"Excellent service, luxurious rooms, and a great location. Perfect for business and leisure travelers."</p>
+        <button class="cta-button" onclick="bookHotel('Radisson Blu Hotel Indore')">Book Now</button>
+        <button class="map-toggle" onclick="toggleMap('radisson-map')">Show Map</button>
+        <div id="radisson-map" class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.2345930454193!2d75.89236661491357!3d22.724526285123186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd4b7d135b6b%3A0x7f8eda1d660ab03!2sRadisson%20Blu%20Hotel%20Indore!5e0!3m2!1sen!2sin!4v1632730529000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <div class="hotel">
+        <h2>Sayaji Hotel Indore</h2>
+        <div class="contact-info">
+            <div class="address">
+                <p><strong>Address:</strong> H/1, Scheme No 54, Vijay Nagar, Indore, Madhya Pradesh 452010</p>
+            </div>
+            <div class="phone">
+                <p><strong>Phone:</strong> <a href="tel:+917312519200">+91 731 251 9200</a></p>
+            </div>
+        </div>
+        <div class="rating">
+            <div class="stars">★★★★☆</div>
+            <span>4.2/5 based on 5000+ reviews</span>
+        </div>
+        <p class="review">"Great ambiance, delicious food, and comfortable rooms. The rooftop restaurant is a must-visit!"</p>
+        <button class="cta-button" onclick="bookHotel('Sayaji Hotel Indore')">Book Now</button>
+        <button class="map-toggle" onclick="toggleMap('sayaji-map')">Show Map</button>
+        <div id="sayaji-map" class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.9998492766235!2d75.89321731491374!3d22.73192858511604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd4487bf4735%3A0x6dc4d20395ef8609!2sSayaji%20Hotel%20Indore!5e0!3m2!1sen!2sin!4v1632730627000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <div class="hotel">
+        <h2>Effotel Hotel Indore</h2>
+        <div class="contact-info">
+            <div class="address">
+                <p><strong>Address:</strong> 21/1, Nath Mandir Rd, South Tukoganj, Indore, Madhya Pradesh 452001</p>
+            </div>
+            <div class="phone">
+                <p><strong>Phone:</strong> <a href="tel:+917314909090">+91 731 490 9090</a></p>
+            </div>
+        </div>
+        <div class="rating">
+            <div class="stars">★★★★☆</div>
+            <span>4.0/5 based on 2000+ reviews</span>
+        </div>
+        <p class="review">"Centrally located, friendly staff, and clean rooms. Great value for money in the heart of Indore."</p>
+        <button class="cta-button" onclick="bookHotel('Effotel Hotel Indore')">Book Now</button>
+        <button class="map-toggle" onclick="toggleMap('effotel-map')">Show Map</button>
+        <div id="effotel-map" class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.2729455878957!2d75.86392331491353!3d22.72327168512462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd0563d4f7b3%3A0xd3605b5beb0ddd6f!2sEffotel%20Hotel%20Indore!5e0!3m2!1sen!2sin!4v1632730720000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function bookHotel(hotelName) {
+            const notification = document.getElementById('notification');
+            notification.textContent = `Booking request sent for ${hotelName}. We'll contact you shortly!`;
+            notification.style.display = 'block';
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+
+        function toggleMap(mapId) {
+            const mapContainer = document.getElementById(mapId);
+            const mapToggle = mapContainer.previousElementSibling;
+            
+            if (mapContainer.classList.contains('active')) {
+                mapContainer.classList.remove('active');
+                mapToggle.textContent = 'Show Map';
+            } else {
+                mapContainer.classList.add('active');
+                mapToggle.textContent = 'Hide Map';
+            }
+        }
+    </script>
+</body>
+</html>

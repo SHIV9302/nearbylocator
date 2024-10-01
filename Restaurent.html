@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="Restaurent.css">
+
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="logo">
+            <h1><img src="Assets\indore navigation.png" alt="logo" width="200" height="60"></h1>
+        </div>
+        <nav class="navigation">
+            <a href="home.html" class="button">Home</a>
+            <a href="indore.html" class="button">Indore</a>
+            <a href="hotels.html" class="button">Hotel</a>
+            <a href="Restaurent.html" class="button">Restaurant</a>
+            <a href="hospital.html" class="button">Hospital</a>
+            <a href="college.html" class="button">Collage</a>
+            <a href="login.html" class ="button">Login</a>
+
+
+
+        </nav>
+        <div class="search-container">
+            <input type="text" id="searchName" placeholder="Search by name...">
+            <button onclick="searchByName()">Search</button>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchLocation" placeholder="Search by location...">
+            <button onclick="searchByLocation()">Search</button>
+        </div>
+        <div class="auth-buttons">
+            <button class="auth-btn" onclick="login()">Login</button>
+            <button class="auth-btn" onclick="register()">Register</button>
+
+
+
+
+        </div>
+    </div>
+    <pre>                                                                                                                                                                                         <input type="text" placeholder="Search Restaurants..."></pre>
+    <hr>
+    <div id="main">
+        <h2>Indori Food and Restaurants....</h2>
+        <pre><big>  Indore is a good city to visit.
+  The food culture of Indore is fantastic.
+  Poha Jalebi in Breakfast is very popular here in Indore.
+  Indore is famous for Khopra Patties and Bhutte ka kees.
+  Moong bhajia are also very famous.
+<big></pre>
+    </div>
+    <pre>
+    <div id="rest1" class="rest">
+        <h3> Dutt GURU KRIPA</h3><hr>
+    <b>Address:</b>    South Toukoganj, Indore<br>
+    <b>Location:</b>   Ground and first floor<br>
+    <b>Rating:</b>     4.1<br>
+    <b>Famous for:</b> Butter Paneer Masala,Tandoori Naan,Chilly Panner and many more<br>
+    <a href="https://www.google.com/maps/place/Dutt+Gurukripa+Restaurant/@22.7197295,75.8742724,17z/data=!3m1!4b1!4m6!3m5!1s0x3962fd3e01f9a8f1:0xee2acafd9d69fa2d!8m2!3d22.7197246!4d75.8768473!16s%2Fg%2F11bwydf8x7?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D" title="main">View on map</a><br>
+    <img src="https://lh5.googleusercontent.com/p/AF1QipN-lw-hv6LNINlNFyd_rkKg42jI7OVwIHpkNaq=w408-h306-k-no" height="200px" width="280px"/> <img src="https://imgs.search.brave.com/syRIs8aWPo3cIeCCaw_oe_vVKn5anPjteuPE4qkS-NY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by92/ZXJ0aWNhbC1zaG90/LXRyYWRpdGlvbmFs/LWluZGlhbi1wYW5l/ZXItYnV0dGVyLW1h/c2FsYS1jaGVlc2Ut/Y290dGFnZS1jdXJy/eS1ibGFjay1zdXJm/YWNlXzE4MTYyNC0z/MjAwMS5qcGc_c2l6/ZT02MjYmZXh0PWpw/Zw" height="200px" width="280px"/> <img src="https://images.venuebookingz.com/33151-1704174699-wm-dutt_gurukripa_restaurant1.jpeg" height="200px" width="280px"/> <img src="https://imgs.search.brave.com/a0gQ8Xpzf9PR7IeSfrS4tTpb2T0ZnE4p-9imUfRYzvQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE1/MDM3NjU5My9waG90/by9icmVhZC10YW5k/b29yaS1pbmRpYW4t/Y3Vpc2luZS5qcGc/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9R0dU/NUxON0c0ekxoSlRF/blBfS2N5dll1YXlp/OGYxbkpjdlF3dm1q/MHJDTT0" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqbsmwyf6eSGNln7qn-LwUGwVat8VzDO7IgQ&s" height="200px" width="280px"/>
+    </div></pre>
+    <hr>
+    <pre>
+        <div id="rest2" class="rest">
+            <h3> CHOTIWALA RESTAURANT</h3><hr>
+    <b>Address:</b>    South Toukoganj, Indore<br>
+    <b>Location:</b>   Ground floor<br>
+    <b>Rating:</b>     3.9<br>
+    <b>Famous for:</b> Paneer Hyderabadi,Dal Tadka,Chole kulche and many more<br>
+    <a href="https://www.google.com/maps?sca_esv=88c0efca59d0fb4e&sca_upv=1&biw=1536&bih=730&output=search&q=shree+chotiwala+restaurant&source=lnms&fbs=AEQNm0DPvcmG_nCbmwtBO9j6YBzM68ZanC7g01Skprhw5JoufbCK1nGzScVrgK3HSlrjNu6plNP03ZWuAbxABvYcOgcrjEKGqHs1ZzuWjLDGGdgu0MYOQ2MaG4TSFNrgvKnsX_Ntn30kSbFnRzJWYIhFAXzjTPKIDwu8DDvD1v3HY7aQrVaQEmOst10t4o-FfkjPyEGmhW3vdB3kTb-1BPTGahS6ITOb9w&entry=mc&ved=1t:200715&ictx=111" title="main">View on map</a><br>
+    <img src="https://b.zmtcdn.com/data/menus/082/1400082/ec81245e98d905d7737ff7cfafc86307.jpg" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7sv6B4EdT5_gFFIymQn9ZQFoqh4OTXi3k9w&s" height="200px" width="280px"/> <img src="https://www.mappls.com/place/4XDV9Z_1651043868661_0.jpeg" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKiHQdrTsH-38NcdIE3mBBxsnoqvgWB9bsYg&s" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkT1vFFin5Xh1hmosBnJ1TAEdiUhvevkU0xg&s" height="200px" width="280px"/>
+        </div></pre>
+    <hr>
+    <pre>
+            <div id="rest3" class="rest">
+                <h3> SHREEMAYA HOTEL AND RESTAURANT</h3><hr>
+    <b>Address:</b>    Madhumilan Square, Indore<br>
+    <b>Location:</b>   Ground Floor<br>
+    <b>Rating:</b>     4.5<br>
+    <b>Famous for:</b> Paneer Hyderabadi,Dal Tadka,Chole kulche and many more<br>
+    <a href="https://www.google.com/maps/dir//Hotel+Shreemaya,+12,+RNT+Marg,+South+Tukoganj,+Indore,+Madhya+Pradesh+452001/@22.7152543,75.855666,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3962fd169713cfcd:0x468e165e059d7f99!2m2!1d75.8747673!2d22.7151832?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D" title="main">View on map</a><br>
+    <img src="https://www.slicerooms.com/images/upload/hotel-shreemaya-residency/hotel-shreemaya-residency-indore-20220317135413-875-(0770x0400).webp" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmQLZUaaNcukwbbxLdks4UBpc-OadzMkY-mA&s" height="200px" width="280px"/> <img src="https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1706851825/55cdf55dae7a7428a501b9c60ec72b1b.jpg" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo1i1UdENvKTNxQykiGVGpzkNx0cQAfixAWw&s" height="200px" width="280px"/> <img src="https://assetdo1.urbandart.com/1711674101444.jpg" height="200px" width="280px"/>
+        </div></pre>
+    <hr>
+    <pre>
+            <div id="rest4" class="rest">
+                <h3> THE ASHOKA HOTEL</h3><hr>
+    <b>Address:</b>    Vijay Nagar Square, Indore<br>
+    <b>Location:</b>   Rooftop<br>
+    <b>Rating:</b>     3.7<br>
+    <b>Famous for:</b> View and Decoration,Dal Tadka,Chole kulche and many more<br>
+    <a href="https://www.google.com/maps?sca_esv=a181e7b5fc982397&sca_upv=1&sxsrf=ADLYWIKdssI8POXwQJIWq7zsK-7-Yd71lg:1726691275564&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgDIhN0aGUgYXNob2thIGhvdGVsIGluKgIIADIREC4YgAQYxwEYmAUYmQUYrwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGKIEGIsDMggQABiABBiiBDILEAAYgAQYogQYiwMyIBAuGIAEGMcBGJgFGJkFGK8BGJcFGNwEGN4EGOAE2AEBSIQ7UMMcWJYlcAJ4AZABAJgB5QGgAZQFqgEDMi0zuAEDyAEA-AEBmAIGoAKhFsICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIOEAAYsAMY5AIY1gTYAQHCAh8QLhiABBiwAxhDGMcBGJgFGMgDGJkFGIoFGK8B2AEBwgIiEC4YgAQYsAMYQxjHARiYBRjIAxiZBRiKBRieBRivAdgBAcICFhAuGIAEGEMYxwEYmAUYmQUYigUYrwHCAgwQABiABBhDGIoFGArCAgoQABiABBhDGIoFwgIHEAAYgAQYCpgDAIgGAZAGE7oGBggBEAEYCZIHCTIuMC4zLjgtMaAHgSI&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KRUAAABUHWM5McL9Px16L313&daddr=17-GF,+Vijay+Nagar,+Opp.+Sayaji+and+Meghdoot+Garden,+MR-10+Road,+Scheme+No+54,+Indore,+Madhya+Pradesh+452010" title="main">View on map</a><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSV2ZEry-jUHKHAIAuR0DgVpTPUIes2yOUsA&s" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVEZyp7CP9FG2Oh_PCIqCUQcoOet6oIvML9A&s" height="200px" width="280px"/> <img src="https://lh3.googleusercontent.com/ZzBf8BpebgOLnaSw7L5wR1Kv6_tZnhm-eXmymjGtKkeH-AeDy_bcyZId706lCNm5gSq8FnlCi71JihvFeE3cS7qes1w=w192-rw" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-stvhbpCIHk4_aVCxb0aekKPAJPLWM2FeA&s" height="200px" width="280px"/> <img src="https://i0.wp.com/www.dhabastyle.com/wp-content/uploads/2017/04/maxresdefault-1.jpg?fit=1100%2C619&ssl=1" height="200px" width="280px"/>
+            </div></pre>
+    <hr>
+    <pre>
+                <div id="rest5" class="rest">
+                    <h3> JAIL THE INDORI CAFE</h3><hr>
+    <b>Address:</b>    Janki Nagar, Indore<br>
+    <b>Location:</b>   Ground Floor<br>
+    <b>Rating:</b>     4.7<br>
+    <b>Famous for:</b> View and Decoration,Cold Coffe, Burger and Fries<br>
+    <a href="https://www.google.com/maps?sca_esv=426d1894efaa3de5&sca_upv=1&sxsrf=ADLYWIJbvpqS-dV6brsuidUsvFhgQtn2eg:1726748840696&gs_lp=Egxnd3Mtd2l6LXNlcnAiGmphaWwgdGhlIGluZG9yaWkgY2FmZSBmYW1vKgIIATIHECEYoAEYCjIHECEYoAEYCjIHECEYoAEYCkivLFDiBlj7HHAEeAGQAQCYAekBoAHuC6oBBTAuMS42uAEDyAEA-AEBmAILoALzDMICChAAGLADGNYEGEfCAg0QABiwAxjWBBhHGMkDwgIOEAAYgAQYsAMYkgMYigXCAhAQLhiABBjHARgNGI4FGK8BwgIGEAAYFhgewgIIEAAYgAQYogTCAh8QLhiABBjHARgNGI4FGK8BGJcFGNwEGN4EGOAE2AEBwgIFECEYoAHCAgUQIRifBZgDAIgGAZAGCboGBggBEAEYFJIHBTQuMC43oAfgIQ&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KRGETbng_GI5MSio-o0glMgi&daddr=1-2,+Shakuntala+Complex,+AB+Rd,+Near+Holkar+College,+Angad+Kapoor+Region,+Janki+Nagar,+Indore,+Madhya+Pradesh+452014" title="main">View on map</a><br>
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/17/80/14/jail-cafe-exterior.jpg?w=1200&h=-1&s=1" height="200px" width="280px"/> <img src="https://lh3.googleusercontent.com/I5-IZRbSTGLC7iW23-VZlEdLGHF6qGX-6D0TXhvckYn9KNJ8FtSGA6BjWYfBZjj_TdgxZAedhpLIYxFP9j8oEu5oBBxK=w360-rw" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8eZKWWE9zd2RPKaiHJ2O5uWA2PQZg7tAUg&s" height="200px" width="280px"/> <img src="https://content.jdmagicbox.com//comp/indore/y3/0731px731.x731.180410163526.e5y3/menu/jail-the-indorii-cafe-janki-nagar-indore-restaurants-38e42nf.jpg" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkBL3qNAKBu2PgJfL5yP1s5oFy5z1r52bI6A&s" height="200px" width="280px"/>
+                </div></pre>
+    <hr>
+    <pre>
+                    <div id="rest6" class="rest">
+                        <h3> JOHNY HOT DOG</h3><hr>
+    <b>Address:</b>    56 Dukaan, Indore<br>
+    <b>Location:</b>   Street Food<br>
+    <b>Rating:</b>     4.3<br>
+    <b>Famous for:</b> Hot Dog<br>
+    <a href="https://www.google.com/maps/dir//Shop+no.+51+%26+52,+Near+56+Dukan,+Chappan+Dukan,+New+Palasia,+Indore,+Madhya+Pradesh+452001/@22.7244992,75.801996,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3962fd38fae99d09:0x3fe6b39432dea85e!2m2!1d75.8843976!2d22.7245203?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D" title="main">View on map</a><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJEUi6tIkLW9ch8-PBg8JQn4avfydnvE4Fg&s" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9b5eTsanw10-UkIFNwuw_i1QF4KAYUxwSbg&s" height="200px" width="280px"/> <img src="https://www.theweekendleader.com/admin/upload/25-10-19-03hot3.webp" height="200px" width="280px"/> <img src="https://content.jdmagicbox.com/comp/indore/i5/0731px731.x731.101016145850.q3i5/catalogue/johnny-hot-dog-new-palasia-indore-fast-food-wskf3yd9sv.jpg" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4mB7qjSLA1gblXR9MK0pyNFIGV6C578BMyg&s" height="200px" width="280px"/>
+                    </div></pre>
+    <hr>
+    <pre>
+                        <div id="rest7" class="rest">
+                            <h3> GYANIJI KA KHALSA DHABA</h3><hr>
+    <b>Address:</b>    Bhawar Kuan Square, Indore<br>
+    <b>Location:</b>   Ground Floor<br>
+    <b>Rating:</b>     3.8<br>
+    <b>Famous for:</b> Aloo Paratha, Dal Makhani and Butter Naan<br>
+    <a href="https://www.google.com/maps/@22.6927863,75.7848864,12z?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D" title="main">View on map</a><br>
+    <img src="https://b.zmtcdn.com/data/pictures/9/20394289/f4925dd0f13ad13127cf234c3a69c8d2.jpg" height="200px" width="280px"/> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN-QIKkkwzoBrbiaWs1YMWW92GmlRvtjakjA&s" height="200px" width="280px"/> <img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/rosxmexmckh6krz14bbe" height="200px" width="280px"/> <img src="https://b.zmtcdn.com/data/pictures/7/1401347/23f46ed69c6e6a7474af9f18c7da1d0a.jpg" height="200px" width="280px"/> <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2015/01/dal-makhani-recipe-1.jpg" height="200px" width="280px"/>
+                        </div></pre>
+    <hr>
+</body>
+
+</html>

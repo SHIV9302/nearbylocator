@@ -1,0 +1,168 @@
+
+body{
+    height: 100%;
+}
+body {
+    background-image: url(Assets/indore_background.jpg);
+    background-size: cover;
+   /* background-image: url('https://images.squarespace-cdn.com/content/v1/61085dcb35f7242682cd3122/ad95e52f-33bb-40a8-a82b-316155a019ab/m+g+road+and++holkarstedium++01a_credit_raju+pawar.jpg');
+   */ background-attachment: fixed;
+    background-position: center center;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    /* background: #f0f2f5; */
+    color: #333;
+}
+  
+header {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background: #0066cc;
+    
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 5px solid #333;
+    border-radius: 20px;
+    
+   
+}
+
+
+
+header h1 {
+    margin: 0px;
+    font-size: 2.5rem;
+   
+}
+
+main {
+    
+    max-width: 1200px;
+    margin: auto;
+}
+
+ /* College container styles */
+.college-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.college-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+
+.box-header {
+    background: #0066cc;
+    width: 100%;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    transition: all 1s ease-in-out;
+   justify-content: center;
+}
+.box-header :hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.box-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.box-content {
+    display: none;
+    padding: 15px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: poppins;
+  }
+  a{
+    color: rgb(33, 120, 233);
+    padding: 10px;
+    font-size: 20px;
+  }
+.header-container a:hover{
+    background-color: #8dbff1;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.header-container{
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #30475e;
+    color: white;
+    padding: 20px 0;
+  }
+  
+.search-container {
+    margin: 20px;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+}
+a:hover {
+    text-decoration: underline;
+   
+ color:red;
+}
+button:hover {
+    background-color: #218838;
+}
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

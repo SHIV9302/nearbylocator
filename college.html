@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleges in Indore</title>
+    <link rel="stylesheet" href="college.css">
+</head>
+<body>
+     <div class="header-container">
+            <div class="logo">
+                <h1><img src="Assets\indore navigation.png" alt="logo" width="200" height="60"></h1>
+            </div>
+            <nav class="navigation">
+                <a href="home.html" class="button">Home</a>
+                <a href="indore.html" class="button">Indore</a>
+                <a href="hotels.html" class="button">Hotel</a>
+                <a href="Restaurent.html" class="button">Restaurant</a>
+                <a href="hospital.html" class="button">Hospital</a>
+                <a href="college.html" class="button">Collage</a>
+                <a href="login.html" class ="button">Login</a>
+
+               
+
+            </nav>
+            <div class="search-container">
+                <input type="text" id="searchName" placeholder="Search by name...">
+                <button onclick="searchByName()">Search</button>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchLocation" placeholder="Search by location...">
+                <button onclick="searchByLocation()">Search</button>
+            </div>
+            <div class="auth-buttons">
+                <button class="auth-btn" onclick="login()">Login</button> 
+                <button class="auth-btn" onclick="register()">Register</button>
+              
+                    
+                
+
+            </div>
+        </div>
+    <header>
+        <h1>Colleges in Indore</h1>
+    </header>
+    
+    <main>
+        <div class="college-container">
+            <div class="college-box ">
+                <div class="box-header" onclick="toggleContent('content1')">
+                    <h3>Indian Institute of Technology (IIT) Indore</h3>
+                    <span class="arrow" id="arrow1">&#9660;</span>
+                </div>
+                <div class="box-content" id="content1">
+                    <p><strong>Address:</strong> IIT Indore, Simrol, Indore, Madhya Pradesh 453552</p>
+                    <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/5xdRxfFPBUjo8BVX8
+                        " target="_blank">View on Google Maps</a></p>
+                    <p><strong>Ranking:</strong> 8th in India (NIRF 2023)</p>
+                    <p><strong>Courses Offered:</strong> B.Tech, M.Tech, Ph.D.</p>
+                    <p><strong>Type:</strong> Engineering</p>
+                    <p> For more info visit: 
+                    <a href=" https://www.iiti.ac.in/" target="_blank">More info</a></p>
+                </div>
+            </div>
+            <div class="college-box ">
+                <div class="box-header" onclick="toggleContent('content3')">
+                    <h3>Indian Institute Of Management–Indore (IIM–Indore)</h3>
+                    <span class="arrow" id="arrow3">&#9660;</span>
+                </div>
+                <div class="box-content" id="content3">
+                    <p><strong>Address:</strong>Prabandh Shikhar, Rau - Pithampur Rd, Indore, Madhya Pradesh 453556</p>
+                    <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/zCSeXpgtjKrT7iYH8
+                        " target="_blank">View on Google Maps</a></p>
+                    <p><strong>Ranking:</strong> 6th in India (NIRF 2023)</p>
+                    <p><strong>Courses Offered:</strong> MBA, Executive MBA, Ph.D.</p>
+                    <p><strong>Type:</strong> Management</p>
+                    <p> For more info visit: 
+                        <a href="  https://iimidr.ac.in/" target="_blank">More info</a></p>
+                </div>
+            </div>
+            <div class="college-box ">
+                <div class="box-header" onclick="toggleContent('content4')">
+                    <h3>Shri Govindram Seksaria Institute of Technology and Science</h3>
+                    <span class="arrow" id="arrow4">&#9660;</span>
+                </div>
+                <div class="box-content" id="content4">
+                    <p><strong>Address:</strong> 23, Sir M. Visvesvaraya Marg, Vallabh Nagar, Indore, Madhya Pradesh 452003</p>
+                    <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/ZkwiQjMRfCw1JQmy8
+                        " target="_blank">View on Google Maps</a></p>
+                    <p><strong>Ranking:</strong> 200-300 in India (NIRF 2023)</p>
+                    <p><strong>Courses Offered:</strong> B.Tech,B.Pharma,MCA,MBA, M.Tech, Ph.D.</p>
+                    <p><strong>Type:</strong> Engineering,Management</p>
+                    <p> For more info visit: 
+                        <a href="https://www.sgsits.ac.in/" target="_blank">More info</a></p>
+                </div>
+            </div>
+            <div class="college-box">
+                <div class="box-header" onclick="toggleContent('content5')">
+                    <h3>Acropolis Institute Of Technology And Research </h3>
+                    <span class="arrow" id="arrow5">&#9660;</span>
+                </div>
+                <div class="box-content" id="content5">
+                    <p><strong>Address:</strong> Bypass Road, Square, Manglaya Sadak, Indore, Madhya Pradesh 4537711</p>
+                    <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/rVVzZeXkYEvoDSNe6" target="_blank">View on Google Maps</a></p>
+                    <p><strong>Ranking:</strong> 5th in Private Colleges in MP</p>
+                    <p><strong>Courses Offered:</strong> B.Tech, MBA, M.Tech, MCA</p>
+                    <p><strong>Type:</strong> Engineering, Management</p>
+                    <p> For more info visit: 
+                        <a href="https://www.acropolis.in/" target="_blank">More info</a></p>
+                </div>
+            </div>
+            
+            
+            <div class="college-box">
+                <div class="box-header" onclick="toggleContent('content6')">
+                    <h3>Prestige Institue Of Engineering Management And Research </h3>
+                    <span class="arrow" id="arrow6">&#9660;</span>
+                </div>
+                <div class="box-content" id="content6">
+                    <p><strong>Address:</strong>Sector-D, Scheme No 74C, Vijay Nagar, Indore, Madhya Pradesh 452010</p>
+                    <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/ZYhCfN9VXpeMYBs16" target="_blank">View on Google Maps</a></p>
+                    <p><strong>Ranking:</strong>NAAC A++ grade </p>
+                    <p><strong>Courses Offered:</strong> B.Tech, MBA, BBA, M.Tech</p>
+                    <p><strong>Type:</strong> Engineering, Management</p>
+                    <p> For more info visit: 
+                        <a href="https://piemr.edu.in/" target="_blank">More info</a></p>
+                </div>
+            </div>
+
+            <div class="college-box">
+                <div class="box-header" onclick="toggleContent('content7')">
+                    <h3>Medicaps University </h3>
+                    <span class="arrow" id="arrow7">&#9660;</span>
+                </div>
+                <div class="box-content" id="content7">
+                    <p><strong>Address:</strong>AB Road Pigdamber, Rau, Indore, Madhya Pradesh 453331</p>
+                    <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/jnNKqgDZ7nsqvbmo7" target="_blank">View on Google Maps</a></p>
+                    <p><strong>Ranking:</strong>NAAC A++ grade </p>
+                    <p><strong>Courses Offered:</strong> B.Tech, MBA, BBA, M.Tech</p>
+                    <p><strong>Type:</strong> Engineering, Management</p>
+                    <p> For more info visit: 
+                        <a href="https://www.medicaps.ac.in/" target="_blank">More info</a></p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- <footer>
+        <p>&copy; 2024 Indore Navigation</p>
+    </footer> -->
+
+    <script>
+        function toggleContent(contentId) {
+            const boxContent = document.getElementById(contentId);
+            const arrow = document.getElementById('arrow' + contentId.replace('content', ''));
+            const isVisible = boxContent.style.display === 'block';
+            if (isVisible) {
+                boxContent.style.display = 'none';
+                arrow.innerHTML = '&#9660;'; // Downward arrow
+            } else {
+                boxContent.style.display = 'block';
+                arrow.innerHTML = '&#9650;'; // Upward arrow
+            }
+        }
+    </script>
+</body>
+</html>

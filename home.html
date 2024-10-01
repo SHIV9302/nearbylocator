@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indore Navigation</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async
+        defer></script>
+</head>
+
+<body>
+
+    <div class="header-container">
+        <div class="logo">
+            <h1><img src="Assets\indore navigation.png" alt="logo" width="200" height="60"></h1>
+        </div>
+        <nav class="navigation">
+            <a href="home.html" class="button">Home</a>
+            <a href="indore.html" class="button">Indore</a>
+            <a href="hotels.html" class="button">Hotel</a>
+            <a href="Restaurent.html" class="button">Restaurant</a>
+            <a href="hospital.html" class="button">Hospital</a>
+            <a href="college.html" class="button">Collage</a>
+            <a href="login.html" class ="button">Login</a>
+
+
+
+        </nav>
+        <div class="search-container">
+            <input type="text" id="searchName" placeholder="Search by name...">
+            <button onclick="searchByName()">Search</button>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchLocation" placeholder="Search by location...">
+            <button onclick="searchByLocation()">Search</button>
+        </div>
+        <div class="auth-buttons">
+            <button class="auth-btn" onclick="login()">Login</button>
+            <button class="auth-btn" onclick="register()">Register</button>
+        </div>
+
+
+    </div>
+    <div class="background">
+        <div class="overlay-text">
+            <h1>Welcome to Indore</h1>
+            <p class="lead mb-4">
+                <b>
+                    Welcome to Indore Navigator, your trusted guide through the heart
+                    of the city! Whether you're a local looking for the quickest route
+                    or a traveler eager to explore Indore’s vibrant culture and
+                    landmarks, we've got you covered. Our easy-to-use navigation
+                    system provides real-time directions, helps you avoid traffic, and
+                    highlights must-see spots around the city. From historical
+                    attractions to hidden local favorites, let Indore Navigator show
+                    you the way. Start your journey today and experience Indore like
+                    never before!
+                </b>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

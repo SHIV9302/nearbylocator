@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibrant Indore Hospitals Guide with Compact Maps</title>
+    <link rel="stylesheet" href="hospital.css">
+        
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1><img src="Assets\indore navigation.png" alt="logo" width="200" height="60"></h1>
+            </div>
+            <nav class="navigation">
+                <a href="home.html" class="button">Home</a>
+                <a href="indore.html" class="button">Indore</a>
+                <a href="hotels.html" class="button">Hotel</a>
+                <a href="Restaurent.html" class="button">Restaurant</a>
+                <a href="hospital.html" class="button">Hospital</a>
+                <a href="college.html" class="button">Collage</a>
+                <a href="login.html" class ="button">Login</a>
+    
+    
+    
+            </nav>
+            <div class="search-container">
+                <input type="text" id="searchName" placeholder="Search by name...">
+                <button onclick="searchByName()">Search</button>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchLocation" placeholder="Search by location...">
+                <button onclick="searchByLocation()">Search</button>
+            </div>
+            <div class="auth-buttons">
+                <button class="auth-btn" onclick="login()">Login</button>
+                <button class="auth-btn" onclick="register()">Register</button>
+            </div>
+    
+    
+        </div>
+        
+    </header>
+</head>
+    
+
+<body>
+    <div class="afterhead">
+
+    <div class="upper">
+    <h1>🏥Indore Hospitals Guide</h1>
+    <p class="subtitle">Discover top-notch healthcare in the heart of Madhya Pradesh</p>
+</div>
+    <div id="notification"></div>
+
+    <div class="hospital">
+        <h2>Apollo Hospitals</h2>
+        <div class="contact-info">
+            <div class="address">
+                <p><strong>Address:</strong> Plot No. 11/2, Old Palasia, Indore, Madhya Pradesh 452001</p>
+            </div>
+            <div class="phone">
+                <p><strong>Phone:</strong> <a href="tel:+917314711111">+91 731 471 1111</a></p>
+            </div>
+        </div>
+        <div class="rating">
+            <div class="stars">★★★★☆</div>
+            <span>4.5/5 based on 500+ reviews</span>
+        </div>
+        <p class="review">"Excellent facilities and caring staff. Highly recommended for specialized treatments."</p>
+        <button class="cta-button" onclick="bookAppointment('Apollo Hospitals')">Book an Appointment</button>
+        <button class="map-toggle" onclick="toggleMap('apollo-map')">Show Map</button>
+        <div id="apollo-map" class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3631090442254!2d75.87493731491422!3d22.751888785088514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2db79de55d1%3A0xf3a8b02d0e824291!2sApollo%20Hospitals%20Indore!5e0!3m2!1sen!2sin!4v1632728861784!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <div class="hospital">
+        <h2>Bombay Hospital</h2>
+        <div class="contact-info">
+            <div class="address">
+                <p><strong>Address:</strong> 95/1, Ring Road, Vijay Nagar, Indore, Madhya Pradesh 452010</p>
+            </div>
+            <div class="phone">
+                <p><strong>Phone:</strong> <a href="tel:+917312558888">+91 731 255 8888</a></p>
+            </div>
+        </div>
+        <div class="rating">
+            <div class="stars">★★★★★</div>
+            <span>4.8/5 based on 750+ reviews</span>
+        </div>
+        <p class="review">"Good infrastructure and experienced doctors. Emergency services are prompt."</p>
+        <button class="cta-button" onclick="bookAppointment('Bombay Hospital')">Book an Appointment</button>
+        <button class="map-toggle" onclick="toggleMap('bombay-map')">Show Map</button>
+        <div id="bombay-map" class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.7232346196415!2d75.89108831491392!3d22.74018858510207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd4f0e565555%3A0x784f3a4bf9c5bf56!2sBombay%20Hospital%20%26%20Research%20Center!5e0!3m2!1sen!2sin!4v1632728995784!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <div class="hospital">
+        <h2>Choithram Hospital and Research Centre</h2>
+        <div class="contact-info">
+            <div class="address">
+                <p><strong>Address:</strong> Manik Bagh Road, Indore, Madhya Pradesh 452014</p>
+            </div>
+            <div class="phone">
+                <p><strong>Phone:</strong> <a href="tel:+917312470001">+91 731 247 0001</a></p>
+            </div>
+        </div>
+        <div class="rating">
+            <div class="stars">★★★★☆</div>
+            <span>4.3/5 based on 600+ reviews</span>
+        </div>
+        <p class="review">"One of the oldest and most trusted hospitals in Indore. Affordable and quality care."</p>
+        <button class="cta-button" onclick="bookAppointment('Choithram Hospital and Research Centre')">Book an Appointment</button>
+        <button class="map-toggle" onclick="toggleMap('choithram-map')">Show Map</button>
+        <div id="choithram-map" class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.2400866536126!2d75.85737731491356!3d22.724356185123505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcf129facd97%3A0x38c6929ee2e7bde4!2sChoithram%20Hospital%20and%20Research%20Centre!5e0!3m2!1sen!2sin!4v1632729066784!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function bookAppointment(hospitalName) {
+            const notification = document.getElementById('notification');
+            notification.textContent = `Appointment request sent for ${hospitalName}. We'll contact you shortly!`;
+            notification.style.display = 'block';
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+
+        function toggleMap(mapId) {
+            const mapContainer = document.getElementById(mapId);
+            const mapToggle = mapContainer.previousElementSibling;
+            
+            if (mapContainer.classList.contains('active')) {
+                mapContainer.classList.remove('active');
+                mapToggle.textContent = 'Show Map';
+            } else {
+                mapContainer.classList.add('active');
+                mapToggle.textContent = 'Hide Map';
+            }
+        }
+    </script>
+    </div>
+</body>
+</html>
